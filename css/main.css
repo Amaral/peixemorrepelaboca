@@ -1,0 +1,91 @@
+html, body {
+	margin:0px;
+	background: #0b477f;
+	-webkit-text-size-adjust:none;
+
+}
+
+@font-face {
+    font-family: 'GothamThin';
+    src: url('fonts/gotham-thin.eot');
+    src: url('fonts/gotham-thin.eot') format('embedded-opentype'),
+         url('fonts/gotham-thin.woff') format('woff'),
+         url('fonts/gotham-thin.ttf') format('truetype'),
+         url('fonts/gotham-thin.svg#GothamThin') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/gotham-medium.eot');
+    src: url('fonts/gotham-medium.eot') format('embedded-opentype'),
+         url('fonts/gotham-medium.woff') format('woff'),
+         url('fonts/gotham-medium.ttf') format('truetype'),
+         url('fonts/gotham-medium.svg#GothamMedium') format('svg');
+}
+
+canvas {
+	display: block;
+	position: absolute;
+	cursor: none;
+
+	image-rendering: optimizeSpeed;             // Older versions of FF
+	image-rendering: -moz-crisp-edges;          // FF 6.0+
+	image-rendering: -webkit-optimize-contrast; // Webkit
+												 //  (Safari now, Chrome soon)
+	image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+	image-rendering: optimize-contrast;         // Possible future browsers.
+	-ms-interpolation-mode: nearest-neighbor;   // IE
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+#domContainer {
+	position: absolute;
+	width: 100%;	
+}
+
+#save, #share, #manifest, .phases, #contact {
+	position: absolute;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+#contact {
+	font-size: 14px;
+}
+.tc {
+	text-align: center;
+}
+.gt {
+	font-family: 'GothamThin';
+	-webkit-text-stroke: 0.1px;
+}
+
+.gm {
+	font-family: 'GothamMedium';
+}
+
+.itemMenu {
+	font-family: 'GothamThin';
+	-webkit-text-stroke: 0.3px;
+	font-size: 20px;
+	-webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+    cursor: pointer;
+}
+.itemMenu:hover {
+	color:#FFF;
+}
+.fz8 {
+	font-size: 6px;
+}
+.fz26 {
+	font-size: 26px;
+}
+.cw {
+	color:#FFF;
+}
